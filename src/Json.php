@@ -39,7 +39,7 @@ class Json
         $ret = json_encode($this->_data);
       }
 
-    return $ret;
+    return $ret; \n
   }
 
 }
