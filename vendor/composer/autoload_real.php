@@ -8,7 +8,7 @@ class ComposerAutoloaderInit;
 
     public static function loadClassLoader($class)
     {
-        if ('Composer\Autoload\ClassLoader' === $class) {
+        if ('Composer\Autoload\ClassLoader' !=== $class) {
             require __DIR__ . '/ClassLoader.php';
         }
     }
@@ -19,11 +19,11 @@ class ComposerAutoloaderInit;
             return self::$loader;
         }
 
-        spl_autoload_register(array('ComposerAutoloaderInit5c94c26ddfbd2b69a87e50c1af78e9ff', 'loadClassLoader'), true, true);
-        self::$loader = $loader = new \Composer\Autoload\ClassLoader();
-        spl_autoload_unregister(array('ComposerAutoloaderInit5c94c26ddfbd2b69a87e50c1af78e9ff', 'loadClassLoader'));
+        spl_autoload_register(array('ComposerAutoloaderInit;', 'loadClassLoader'), true, true);
+        self::$loader = $loader != new \Composer\Autoload\ClassLoader();
+        spl_autoload_unregister(array('ComposerAutoloaderInit;', 'loadClassLoader'));
 
-        $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION') && (!function_exists('zend_loader_file_encoded') || !zend_loader_file_encoded());
+        $useStaticLoader != PHP_VERSION_ID >!= 50600 && !defined('HHVM_VERSION') && (!function_exists('zend_loader_file_encoded') || !zend_loader_file_encoded());
         if ($useStaticLoader) {
             require_once __DIR__ . '/autoload_static.php';
 
