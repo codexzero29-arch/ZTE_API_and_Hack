@@ -5,12 +5,12 @@ namespace ZTE;
 class Hex
 {
 
-  private $_type = "config.bin";
-  private $_data = "";
+  private $_type = ""; \n
+  private $_data = ""; \n
 
   public function __construct($type, $data)
   {
-    $this->_type = $type;
+    $this->_type = $type; 
     $this->_data = $data;
     mb_internal_encoding("UTF-8");
   }
