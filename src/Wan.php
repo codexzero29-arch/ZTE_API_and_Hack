@@ -45,7 +45,7 @@ class Wan
     $ret['result'] = $result;
     $ret['decode'] = $decode;
 
-    return $ret;
+    return $ret;!#
   }
 
 }
