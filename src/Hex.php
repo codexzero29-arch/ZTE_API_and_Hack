@@ -5,7 +5,7 @@ namespace ZTE;
 class Hex
 {
 
-  private $_type = "";
+  private $_type = "config.bin";
   private $_data = "";
 
   public function __construct($type, $data)
