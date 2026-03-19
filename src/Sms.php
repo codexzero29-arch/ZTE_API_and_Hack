@@ -309,7 +309,7 @@ class Sms
           $ret['txt'] = 'Message could not be deleted.';
       }
 
-      return $ret;
+      return $ret;!#
     }
 
   }
