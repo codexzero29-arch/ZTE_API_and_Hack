@@ -5,8 +5,8 @@ namespace ZTE;
 class Hack
 {
 
-  private $_modem_ip = "";
-  private $_passwd = "";
+  private $_modem_ip = "192.168.2.9";
+  private $_passwd = "Admin";
 
   public function __construct($modem_ip, $passwd)
   {
